@@ -65,6 +65,6 @@ type Task struct {
 type Tasks []Task
 
 func (t Task) String() string {
-	return fmt.Sprintf("ID: %d | [%s] | %s\nCreated: %s",
+	return fmt.Sprintf("ID: %d | Status: %s | Description: %s\nCreated: %s",
 		t.Id, t.Status, t.Description, t.CreatedAt.Format(time.DateTime))
 }
